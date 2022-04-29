@@ -79,7 +79,7 @@ class Hero extends React.Component {
             }
             @media (max-width:500px) {
                 position: relative;
-                margin-top: 200px;
+                margin-top: 300px;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 400px;
@@ -161,16 +161,12 @@ class Hero extends React.Component {
                 transform: translateX(-50%);
                 top: -40px;
             }
-            .simularmobile{
-                position: relative;
-                display: inline-block;
+            .simularmobil{
+                display: flex;
                 font-size: 20px;
-                padding: 8px 20px;
-          
-                    width: 200px;
-                    font-size: 15px;
+                width: 200px;
+                font-size: 15px;
                 background: #e85a0c;
-                margin-top: -35px;
                 border:none;
                 border-radius: 20px;
                 color: #fff;
@@ -178,12 +174,11 @@ class Hero extends React.Component {
                 font-weight: 600;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.2);
                 transition: 1s;
-                width: 300px;
-                left: 50%;
-                transform: translateX(-50%);
-                top: -40px;
+                width: 150px;
+                margin-left: 130px;
+                justify-content: center;
             }
-            .simularmobile:hover{
+            .simularmobil:hover{
                 color: #e85a0c;
                 background: #fff;
                 
@@ -273,11 +268,16 @@ class Hero extends React.Component {
                     display: none;
                 }
                 .simularmobile{
-                    margin-top: 50px;
+                    position: relative;
                 }
+                .texto{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 250px;
+                    }
             }
-            @media (min-width: 500px){
-                .simularmobile{
+            @media (min-width: 505px){
+                .simularmobil{
                     display: none;
                 }
             }
@@ -343,8 +343,9 @@ class Hero extends React.Component {
                                                 }}
                                             />
                                         </Type>
-                                        <button onClick={Simular} className='simularmobile'>SIMULAR AGORA</button>
+                                        <button onClick={Simular} className='simularmobil'>SIMULAR AGORA</button>
                                             </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
