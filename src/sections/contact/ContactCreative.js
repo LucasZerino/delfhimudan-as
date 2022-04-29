@@ -20,6 +20,9 @@ class ContactCreative extends React.Component {
         const FormRow = styled(Row)`
            @media (min-width: 560px) {
             background-color: rgba(255,255,255,.2);
+            height: 700px;
+            display: flex;
+            padding-top: 45px;
          }
            
         `

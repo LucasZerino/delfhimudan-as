@@ -290,10 +290,6 @@ class ServicesOne extends React.Component {
               margin-top: 35px;
             }.ps-timeline-sec {
             position: relative;
-            .imcIcon.last{
-              backgroud: red;
-            }
- 
       }
       .ps-timeline-sec .container {
         position: relative;

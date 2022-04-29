@@ -124,6 +124,11 @@ class Navbar extends React.Component {
             padding: 10px;
             font-size: 100%;
             text-transform: uppercase;
+            text-shadow: 
+            -1px -1px 0px #e8590c, 
+            -1px 1px 0px #e8590c,                    
+            1px -1px 0px #e8590c,                  
+            1px 0px 0px #e8590c;
         }
         a:hover{
             color: #04E5E5;
@@ -191,7 +196,7 @@ class Navbar extends React.Component {
         const NavItem = styled.button`
             background: none;
             border: none;
-            color: #FF7226;
+            color: #FFF;
             text-transform: uppercase;
             font-weight: 600;
             margin: 10px 5px;

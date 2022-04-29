@@ -52,7 +52,7 @@ class Hero extends React.Component {
             width: 100%;
             display: flex;
             align-items: center;
-            background: rgba(42,21,9,.4);
+            background: rgba(232,89,12,0.25);
         `
 
         const Heading1 = styled.h1`
@@ -61,9 +61,15 @@ class Hero extends React.Component {
             font-size: 60px;
             font-family: Teko;
             line-height: 70px;
-            color: #e8590c;
+            color: #FFF;
+            text-shadow: 
+            -1px -1px 0px #e8590c, 
+            -1px 1px 0px #e8590c,                    
+            1px -1px 0px #e8590c,                  
+            1px 0px 0px #e8590c;
             font-weight: 400;
             text-transform: uppercase;
+            
             @media (max-width:1700px) { 
                 margin-top: 350px;
             }
@@ -73,7 +79,7 @@ class Hero extends React.Component {
             }
             @media (max-width:500px) {
                 position: relative;
-                top: -50px;
+                margin-top: 200px;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 400px;
@@ -100,7 +106,7 @@ class Hero extends React.Component {
             }
             @media (max-width:500px) {
                 position: relative;
-                top: -50px;
+                margin-top: 10px;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 400px;
@@ -109,6 +115,7 @@ class Hero extends React.Component {
         `
 
         const Type = styled.div`
+            position: relative;
             font-size: 50px;
             line-height: 50px;
             color: #fff;
@@ -140,6 +147,7 @@ class Hero extends React.Component {
                 display: inline-block;
                 font-size: 40px;
                 padding: 8px 20px;
+                border: none;
                 background: #e85a0c;
                 margin-top: 105px;
                 border-radius: 20px;
@@ -158,8 +166,12 @@ class Hero extends React.Component {
                 display: inline-block;
                 font-size: 20px;
                 padding: 8px 20px;
+          
+                    width: 200px;
+                    font-size: 15px;
                 background: #e85a0c;
-                margin-top: -25px;
+                margin-top: -35px;
+                border:none;
                 border-radius: 20px;
                 color: #fff;
                 text-decoration: none;
@@ -174,6 +186,7 @@ class Hero extends React.Component {
             .simularmobile:hover{
                 color: #e85a0c;
                 background: #fff;
+                
             }
             .simular:hover{
                 color: #e85a0c;
@@ -209,7 +222,7 @@ class Hero extends React.Component {
             }
             @media (max-width:1700px) { 
                 .simular{
-                    margin-top: -10px;
+                    margin-top: 20px;
                 }
             }
             @media (max-width:1600px) {
@@ -222,9 +235,45 @@ class Hero extends React.Component {
                 flex-direction: column;
                 }
             }
+            @media (max-height:800px) { 
+                .sep{
+                    margin-top: -50px;
+                }
+                .simular{
+                    margin-top: 20px;
+                }
+            }
+            @media (max-height:700px) { 
+                .sep{
+                    margin-top: -150px;
+                }
+            }
+            @media (max-height:650px) { 
+                .sep{
+                    margin-top: -200px;
+                }
+                .simular{
+                    margin-top: 60px;
+                }
+            }
+            @media (max-height:650px) { 
+                .simular{
+                    margin-top: 110px;
+                }
+            }
+            @media (max-height:500px) { 
+                .simular{
+                    margin-top: 180px;
+                    width: 250px;
+                    font-size: 15px;
+                }
+            }
             @media (max-width: 500px){
                 .simular{
                     display: none;
+                }
+                .simularmobile{
+                    margin-top: 50px;
                 }
             }
             @media (min-width: 500px){
@@ -251,13 +300,13 @@ class Hero extends React.Component {
                 width: 500px;
             }
             @media (max-width:500px) {
-                position: relative;
-                top: -50px;
-                width: 150px;
-                font-size: 15px;
+                display: none;
             }
         `
-
+        function Simular(){
+            var obj = document.getElementById('SIMULAR').scrollIntoView();
+        }
+        
         
 
         return (
@@ -277,7 +326,6 @@ class Hero extends React.Component {
                                         PLANO DE SAÚDE INDIVIDUAL E FAMILIAR, VOCÊ ENCONTRA AQUI!
                                         </Heading2>
                                         <Separator/>
-                                        <a className='simularmobile' href="#SIMULAR">SIMULAR AGORA</a>
                                         <Type>
                                             <Typewriter
                                                 options={{
@@ -295,11 +343,12 @@ class Hero extends React.Component {
                                                 }}
                                             />
                                         </Type>
+                                        <button onClick={Simular} className='simularmobile'>SIMULAR AGORA</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <a className='simular' href="#SIMULAR">SIMULAR AGORA</a>
+                                <button onClick={Simular} className='simular'>SIMULAR AGORA</button>
                                 
                             </Content>
                   

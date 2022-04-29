@@ -73,7 +73,7 @@ class Animated_Heading extends React.Component {
                 font-size: 55px;
                 line-height: 40px;
             }
-            @media (max-width: 499px) {
+            @media (max-width: 800px) {
                 font-size: 30px;
                 line-height: 40px;
             }

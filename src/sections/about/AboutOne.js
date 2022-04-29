@@ -116,9 +116,10 @@ class AboutOne extends React.Component {
                 transition: 0.5s;
             }
             
-            .cardContainer .card .box .content a{
+            .cardContainer .card .box .content button{
                 position: relative;
                 display: inline-block;
+                border: none;
                 padding: 8px 20px;
                 background: #fff;
                 margin-top: 15px;
@@ -130,7 +131,7 @@ class AboutOne extends React.Component {
                 transition: 2s;
             }
 
-            .cardContainer .card:hover .box .content a{
+            .cardContainer .card:hover .box .content button{
                 color: #fff;
                 background: #e85a0c;
             }
@@ -203,11 +204,18 @@ class AboutOne extends React.Component {
           background-color: #e8590c;
           margin-bottom: 30px;
           align-self: center;
+          top: 100px;
+          @media (max-width:1000px) {
+            position: relative;
+            top: -400px;
+            width: 650px;
+            font-size: 15px;
+        }
          
           @media (max-width:500px) {
               position: relative;
-              top: -50px;
-              width: 150px;
+              top: -400px;
+              width: 350px;
               font-size: 15px;
           }
       `
@@ -221,6 +229,25 @@ class AboutOne extends React.Component {
           justify-content: center;
           top: -200px;
           z-index: 2;
+          .imgsfull{
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+          }
+          .imgsfull .col1{
+              display: flex;
+              justify-content: space-around;
+          }
+          .imgsfull .col2{
+              margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+          .imgsfullitem{
+              width: 100px;
+              height: 100px;
+              border: 1px solid #e8590c;
+          }
           .allcards{
               display: flex;
               flex-direction: column;
@@ -234,123 +261,20 @@ class AboutOne extends React.Component {
             margin-top: -30px;
               display: flex;
           }
-        
-        @media (max-width:1000px) {
-            margin-top: -600px;
-            height: 1900px;
-          .col1{
-              flex-direction: column;
+          @media (min-width:1000px) {
+            .imgsfull{
+                display: none;
+            }
           }
-          .col2{
-            flex-direction: column;
-        }
-        }
-        .lastcontainer{
-            margin-top:1000px;
-        }
-        @media (max-width:500px) {
-            .card{
-                height: 210px;
-                width: 210px;
-                background-color: white;
-                transform: scale(0.7);
-                border-radius: 8px;
-                box-shadow: 0 0 10px 0.5px white;
-            }
-            .card.ac{
-               margin-top:-200px;
-            }
-            .card.ad{
-                margin-top:-400px;
-             }
-             .card.ae{
-                margin-top:-600px;
-             }
-             .card.af{
-                margin-top:-750px;
-             }
-             .card.ag{
-                margin-top:-950px;
-             }
-             .card.ah{
-                margin-top:-1150px;
-             }
-            .card .info{
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-            }
-            .card .info .name{
-                font-size: 15px;
-                font-weight: 600;
-                color: #f79f08;
-                position: absolute;
-                top: 20px;
-                letter-spacing: 2px;
-            }
-            .divider{
-                background-color: #e85a0c;
-                height: 1.5px;
-                width: 100px;
-                position: absolute;
-                top: 40px;
-            }
-            .bio{
-                position: absolute;
-                top: 60px;
-                color: #000000;
-                line-height: 28px;
-                font-size: 15px;
-                text-align: center;
-            }
-            .button{
-                position: absolute;
-                bottom: 15px;
-                background-color: #f79f08;
-                border: none;
-                font-size: 15px;
-                cursor: pointer;
-                color: white;
-                text-decoration: none;
-            }
-            .photo{
-                height: 100%;
-                width: 100%;
-                background-repeat: no-repeat;
-                position: absolute;
-                bottom: 0;
-                background-size: 100% 100%;
-                border-radius: 8px;
-                transition: 1s;
-            }       
-            .card:hover .name{
-                display: inline;
-            }
-            
-            .card:hover .photo{
-                transform: scale(0.5, 0.35) translateY(-350px);
-                border-radius: 50%;
-                background-size: 100% 100%;
-                background-position: 0 0;
-             }     
-             .card .a2{
-                position: absolute;
-                bottom: -70px;
-                font-size: 25px;
-                color: whitesmoke;
-                background-color: #ff6e20;
-                width: 100%;
-                padding: 5px 0;
-                font-size: 27px;
-                font-family: 'Poppins';
-                font-weight: 600;
-                text-align: center;
-                letter-spacing: 2px;
-                text-decoration: none;
-            }       
+        @media (max-width:1000px) {
+            margin-top: 450px;
+           height: 50px;     
+        
       `
 
+      function Simular(){
+        var obj = document.getElementById('SIMULAR').scrollIntoView();
+    }
 
   
           return(
@@ -362,6 +286,19 @@ class AboutOne extends React.Component {
                           <LeftCol md={12}>
                           <BottomContent>
                             <AnimatedHeading  text="Nossos Planos disponíveis" />
+                            <div className='imgsfull'>
+                                <div className='col1'>
+                                    <img className='imgsfullitem' src={Delfhi}/>
+                                    <img className='imgsfullitem' src={Unimed}/>
+                                    <img className='imgsfullitem' src={Humana}/>
+                                    <img className='imgsfullitem' src={Hapvida}/>
+                                </div>
+                                <div className='col2'>
+                                    <img className='imgsfullitem' src={Bradesco}/>
+                                    <img className='imgsfullitem' src={Sulamerica}/>
+                                    <img className='imgsfullitem' src={Amil}/>
+                                </div>
+                            </div>
                             <div className='allcards'>
                                 <div className='col1'>
                                         <Item>
@@ -490,7 +427,7 @@ class AboutOne extends React.Component {
                                                 <p>
                                                     R$139,90
                                                 </p>
-                                                <a href="#SIMULAR">SIMULAR AGORA</a>
+                                                <button onClick={Simular} className='simularmobile'>SIMULAR AGORA</button>
                                             </div>
                                         </div>
                                     </div>
