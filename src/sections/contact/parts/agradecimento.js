@@ -62,9 +62,6 @@ class ContactThreeForm extends React.Component {
               flex-direction: column;
               align-items: center;
             }
-            .form.active{
-              display: none;
-            }
             .butt{
               display: block;
               height: 50px;
@@ -182,19 +179,14 @@ class ContactThreeForm extends React.Component {
             
 
         `
-        function Agradecer () {
-          alert("Obrigado, já entraremos em contato!")
-        }
-      
-
         function sendMail(e){
           e.preventDefault();
           
           emailjs.sendForm(
-            'service_zkaif7h',
-            'template_7b3k2jn',
+            'service_ul19imr',
+            'template_eo5298l',
             e.target,
-            'uPupkUUqsmir4hGB0'
+            '41-VHSsKieE-uoWbt'
             ).then(res=>{
               console.log(res);
             }).catch(err=> console.log(err));
@@ -250,7 +242,7 @@ class ContactThreeForm extends React.Component {
             </h6>
             
             </div>
-            <button className='butt' type='submit' onClick={Agradecer}>Quero simular</button>
+            <button className='butt' type='submit'>Quero simular</button>
           </form>
       </ContactForm>
         )

@@ -50,7 +50,12 @@ class ContactCreative extends React.Component {
                     <FormRow>
                       <ContactCol md={6}>
                         <div className='center'>
-                          <ContactCreativeForm />
+                          <div className='form active'>
+                            <ContactCreativeForm />
+                          </div>
+                          <div className='form'>
+
+                          </div>
                         </div>
                       </ContactCol>
                       <ContactCol md={6}>
