@@ -39,6 +39,9 @@ class ContactCreative extends React.Component {
             border: none;
             height: 100%;
             width: 100%;
+            @media (max-width: 767px) and (min-width: 500px) {
+              display: none;
+            }
         `
 
         

@@ -101,10 +101,6 @@ class ContactThreeForm extends React.Component {
               width: 80%;
 
             }
-            @media (max-width: 767px) {
-              left: 50%;
-              transform: translateX(-50%);
-            }
             @media (max-width: 500px) {
               margin-top: -200px;
               background: rgba(232,90,12, .7);
