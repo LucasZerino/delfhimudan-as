@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Mark from './imgs/Webckmark.png'
 class Footer extends React.Component{
 
     render() {
@@ -31,6 +30,9 @@ class Footer extends React.Component{
               
             }
             .criado{
+                text-align: center;
+                width: 100%;
+                background-color: #555;
                 color: gray;
                 font-size: 10px;
                 text-decoration: none
@@ -44,6 +46,11 @@ class Footer extends React.Component{
                 margin-top: 10px;
                 left: 10px;
                 color: gray;
+            }
+            .corretora{
+                background: #e85a0c;
+                display: flex;
+                width: 100%;
             }
             @media (max-width:800px) {
                 .position{
@@ -74,12 +81,6 @@ class Footer extends React.Component{
 
         return (
         <FooterMain>
-            <h1>
-                Segunda a sexta, 08h às 17h
-                atendimento@delfhicorretora.com.br​<br/>
-                <span>Telefone</span> (84) 3211-1000 |
-                <span> Whatsapp</span>(84) 99643-5898
-            </h1>
                 <a className='criado' href='https://webck.com.br/' target="_blank" >Copyright © 2022 - criado e desenvolvido por Webck Soluções - 21.453.885/0001-54</a>
         </FooterMain>
         )

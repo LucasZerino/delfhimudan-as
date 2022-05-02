@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Hero from '../sections/hero/Herodev.js'
 import AboutOne from '../sections/about/AboutOne.js'
 import ServicesOne from '../sections/services/ServicesOne.js'
+import Footercontact from '../sections/footercontact/footercontact'
 
 
 class Index extends React.Component {
@@ -27,6 +28,7 @@ class Index extends React.Component {
           <Hero />
           <AboutOne />
           <ServicesOne />
+          <Footercontact/>
         </Layout>
       </div>
     )
