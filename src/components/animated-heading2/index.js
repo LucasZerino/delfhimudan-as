@@ -61,11 +61,11 @@ class Animated_Heading extends React.Component {
         `
         
         const AnimatedLetter = styled.span`
-            transform: translate(0, -100px);
+            text-align: center;
             display: inline-block;
             transition: 1s;
             opacity: 0;
-            font-size: ${this.props.fontSize ? this.props.fontSize : "100px"};
+            font-size: 60px;
             line-height: ${this.props.lineHeight ? this.props.lineHeight : "90px"};
             font-family: Teko;
             text-transform: uppercase;
@@ -86,7 +86,8 @@ class Animated_Heading extends React.Component {
             }
         `
         const Space = styled.span`
-            font-size: 100px;
+
+            font-size: 60px;
             margin: 0 ${this.props.space ? this.props.space : "10px"};
             @media (max-width: 767px) {
                 font-size: 40px;

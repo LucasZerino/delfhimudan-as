@@ -62,7 +62,7 @@ class Navbar extends React.Component {
             z-index: 100;
             &.sticky {
                 position: fixed;
-                background-color: rgba(169,169,169, 0.3);
+                background-color: rgba(169,169,169, 0.8);
                 padding: 0 0;
                 @media (max-width: 500px) {
                     padding: 20px 0;
@@ -90,7 +90,7 @@ class Navbar extends React.Component {
                 flex: 0 0 100%;
                 max-width: 100%;
                 justify-content: center;
-                background-color: rgba(255,255,255, 0.3);
+                background-color: transparent;
                 margin-top: 20px;
                 &.hidden_mobile {
                     display: flex;

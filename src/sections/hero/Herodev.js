@@ -57,7 +57,7 @@ class Hero extends React.Component {
 
         const Heading1 = styled.h1`
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Teko:wght@300&display=swap');
-            margin-top: 500px;
+            margin-top: 750px;
             font-size: 60px;
             font-family: Teko;
             line-height: 70px;
@@ -238,7 +238,7 @@ class Hero extends React.Component {
                     margin-top: 20px;
                 }
             }
-            @media (max-height:700px) { 
+            @media (max-height:1700px) { 
                 .sep{
                     margin-top: -150px;
                 }
@@ -264,6 +264,9 @@ class Hero extends React.Component {
                 }
             }
             @media (max-width: 500px){
+                .sep{
+                    margin-top: -200px;
+                }
                 .simular{
                     display: none;
                 }
@@ -291,7 +294,6 @@ class Hero extends React.Component {
             height: 5px;
             width: 1200px;
             background-color: #e8590c;
-            margin-bottom: 30px;
             align-self: center;
             @media (max-width:1700px) { 
                 width: 800px;

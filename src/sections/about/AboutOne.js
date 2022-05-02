@@ -135,8 +135,11 @@ class AboutOne extends React.Component {
                 color: #fff;
                 background: #e85a0c;
             }
-            @media (max-width:1400px) {
-                
+            @media (min-width:1400px) {
+               .heading{
+                margin-left: 2.2vw;
+
+               }
             }
               @media (max-width: 800px){
                 .cardContainer{
@@ -170,6 +173,9 @@ class AboutOne extends React.Component {
                   line-height: 30px;
                   text-align: center;
               }
+              @media (max-width:500px) {
+                margin-top: -150px;
+            }
           `
           const Color = styled.span`
               color: #e85a0c;
@@ -228,7 +234,12 @@ class AboutOne extends React.Component {
           width: 100%;
           justify-content: center;
           top: -200px;
+          text-align: center;
           z-index: 2;
+          .heading{
+           position: relative;
+           text-align: center;
+          }
           .imgsfull{
               display: flex;
               flex-direction: column;
@@ -283,9 +294,12 @@ class AboutOne extends React.Component {
               <div className='particles'>  </div>
                   <AboutContainer>
                       <Row>
+                          
                           <LeftCol md={12}>
                           <BottomContent>
-                            <AnimatedHeading  text="Nossos Planos disponíveis" />
+                            <div className='heading'>
+                            <AnimatedHeading  text="Nossos Planos" />
+                            </div>
                             <div className='imgsfull'>
                                 <div className='col1'>
                                     <img className='imgsfullitem' src={Delfhi}/>
@@ -400,11 +414,6 @@ class AboutOne extends React.Component {
                                     </div>      
                     </BottomContent>
                     </LeftCol>
-                    <div className='lastcontainer'>
-
-
-                    </div>
-
                           <LeftCol md={6}>
                               <RevealContent>
                                   <Heading>
