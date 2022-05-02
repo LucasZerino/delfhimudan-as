@@ -57,7 +57,9 @@ class Navbar extends React.Component {
         const NavbarWrapper = styled.div`
             position: absolute;
             z-index: 1;
+            height: 50px;
             width: 100%;
+            font-weight: 400;
             padding: 20px 0;
             z-index: 100;
             &.sticky {
@@ -72,6 +74,7 @@ class Navbar extends React.Component {
 
         const NavbarContainer = styled(Container)`
             display: flex;
+            
             position: relative;
             @media (max-width: 500px) {
                 display: block;
@@ -125,9 +128,9 @@ class Navbar extends React.Component {
             font-size: 100%;
             text-transform: uppercase;
             text-shadow: 
-            -1px -1px 0px #e8590c, 
-            -1px 1px 0px #e8590c,                    
-            1px -1px 0px #e8590c,                  
+            -1px -1px 0px #red, 
+            -1px 1px 0px #red,                    
+            1px -1px 0px #red,                  
             1px 0px 0px #e8590c;
         }
         a:hover{
@@ -197,6 +200,11 @@ class Navbar extends React.Component {
             background: none;
             border: none;
             color: #FFF;
+            text-shadow: 
+            -.5px  -.5px 0px gray, 
+            -.5px .5px 0px gray,                    
+            .5px -.5px 0px gray,                  
+            .5px 0px 0px gray;
             text-transform: uppercase;
             font-weight: 600;
             margin: 10px 5px;

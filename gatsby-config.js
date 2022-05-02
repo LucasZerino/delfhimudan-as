@@ -37,27 +37,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content/portfolio/`,
-        name: 'portfolio',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content/testimonials/`,
-        name: 'testimonials',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content/team/`,
-        name: 'team',
-      },
-    },
-    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         minify: false,
