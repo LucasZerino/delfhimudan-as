@@ -64,6 +64,7 @@ class ServicesOne extends React.Component {
 
           .imcIcon:hover{
             width: 300px;
+            height: 300px;
           }
 
         

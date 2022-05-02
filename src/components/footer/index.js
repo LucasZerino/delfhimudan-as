@@ -57,6 +57,12 @@ class Footer extends React.Component{
                 }
             }
             @media (max-width:500px) {
+                h1{
+                    font-size: 7px;
+                }
+                .criado{
+                    font-size: 7px;
+                }
                 .mark{
                     display: none;
                 }
@@ -71,7 +77,7 @@ class Footer extends React.Component{
             <h1>
                 Segunda a sexta, 08h às 17h
                 atendimento@delfhicorretora.com.br​<br/>
-                <span>Telefone</span> (84) 3211-1000
+                <span>Telefone</span> (84) 3211-1000 |
                 <span> Whatsapp</span>(84) 99643-5898
             </h1>
                 <a className='criado' href='https://webck.com.br/' target="_blank" >Copyright © 2022 - criado e desenvolvido por Webck Soluções - 21.453.885/0001-54</a>
