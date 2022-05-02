@@ -68,17 +68,19 @@ class Navbar extends React.Component {
                 padding: 0 0;
                 @media (max-width: 500px) {
                     padding: 20px 0;
+                    background-color: transparent;
                 }
             }
         `
 
         const NavbarContainer = styled(Container)`
             display: flex;
-            
             position: relative;
+            margin-top: -20px;
             @media (max-width: 500px) {
                 display: block;
                 padding: 0;
+                background-color: rgba(169,169,169, 0.8);
             }
             
         `
@@ -90,10 +92,10 @@ class Navbar extends React.Component {
             justify-content: flex-end;
             align-items: center;
             @media (max-width: 500px) {
+                margin-top: -50px;
                 flex: 0 0 100%;
                 max-width: 100%;
                 justify-content: center;
-                background-color: transparent;
                 margin-top: 20px;
                 &.hidden_mobile {
                     display: flex;

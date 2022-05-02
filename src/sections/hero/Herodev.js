@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Typewriter from 'typewriter-effect'
+import Bg from './imgs/bg.png'
 
 
 class Hero extends React.Component {
@@ -46,6 +47,9 @@ class Hero extends React.Component {
             background-image: url(${this.props.background.childImageSharp.fluid.src});
             background-size: cover;
             background-repeat: no-repeat;
+            @media (max-width:500px) {
+                background-image: url(${Bg})
+            }
         `
 
         const Overlay = styled.div`
@@ -71,7 +75,7 @@ class Hero extends React.Component {
             text-transform: uppercase;
             
             @media (max-width:1700px) { 
-                margin-top: 350px;
+                margin-top: 750px;
             }
             @media (max-width:767px) {
                 font-size: 30px;
@@ -163,9 +167,8 @@ class Hero extends React.Component {
             }
             .simularmobil{
                 display: flex;
-                font-size: 20px;
                 width: 200px;
-                font-size: 15px;
+                font-size: 25px;
                 background: #e85a0c;
                 border:none;
                 border-radius: 20px;
@@ -174,8 +177,8 @@ class Hero extends React.Component {
                 font-weight: 600;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.2);
                 transition: 1s;
-                width: 150px;
-                margin-left: 130px;
+                width: 220px;
+                margin-left: 100px;
                 justify-content: center;
             }
             .simularmobil:hover{
@@ -217,7 +220,7 @@ class Hero extends React.Component {
             }
             @media (max-width:1700px) { 
                 .simular{
-                    margin-top: 20px;
+                    margin-top: 105px;
                 }
             }
             @media (max-width:1600px) {

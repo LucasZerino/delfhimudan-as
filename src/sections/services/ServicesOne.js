@@ -77,6 +77,10 @@ class ServicesOne extends React.Component {
             }
       
       @media screen and (max-width: 1000px) {
+        .imcIcon{
+          width: 150px;
+          height: 150px;
+        }
         h2{
           font-size: 1.3em;
         }
@@ -96,18 +100,17 @@ class ServicesOne extends React.Component {
         }
         .ps-timeline-sec .container ol.ps-timeline li {
          
-          height: 280px;
+          height: 200px;
           float: none !important;
           width: inherit !important;
         }
         .ps-timeline-sec .container ol.ps-timeline li:nth-child(2) .img-handler-bot img {
           margin-bottom: 50px;
-          width: 100px;
         }
         .ps-timeline-sec .container ol.ps-timeline li:last-child {
           margin: 0;
           bottom: 0 !important;
-          height: 150px;
+          height: 100px;
         }
         .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot {
      
@@ -171,13 +174,17 @@ class ServicesOne extends React.Component {
           width: 60% !important;
           float: right !important;
           right: 0;
-          top: -40px;
+          top: -55px;
+        }
+        .ps-timeline-sec .container ol.ps-timeline li .ps-top.last {
+          top: 30px;
+          right: 30px;
         }
         .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
           width: 60% !important;
           float: right !important;
           right: 0;
-          top: -40px;
+          top: -60px;
         }
       }
       .ps-timeline-sec .container ol:before {
@@ -304,6 +311,7 @@ class ServicesOne extends React.Component {
       .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
         position: absolute;
         margin-top: 35px;
+
       }
       .ps-top.last{
         margin-top: -70px;

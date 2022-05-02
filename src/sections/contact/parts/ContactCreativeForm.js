@@ -56,6 +56,7 @@ class ContactThreeForm extends React.Component {
             justify-content: center;
             padding: 40px;
             position: relative;
+            margin-bottom: 100px;
             z-index: 5;
             .form{
               display: flex;
@@ -116,7 +117,7 @@ class ContactThreeForm extends React.Component {
             color: #fff;
             text-align: center;
             .simule{
-              margin-top: 50px;
+              margin-top: 250px;
               font-size: 50px;
             }
             .compromisso{
@@ -202,9 +203,6 @@ class ContactThreeForm extends React.Component {
         return(
           <ContactForm>
             <Heading>
-              <br></br>
-              <br></br>
-              <br></br>
            <h1 className='simule'> Simule Agora</h1>
             <h6 className='compromisso'>Sem compromisso</h6>
             </Heading>
