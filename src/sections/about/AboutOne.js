@@ -316,20 +316,6 @@ class AboutOne extends React.Component {
                             <div className='allcards'>
                                 <div className='col1'>
                                         <Item>
-                                        <div className="card">
-                                            <div className="info">
-                                                <div className="name">DelfhiOdonto</div>
-                                                <div className="divider"></div>
-                                                <div className="bio">
-                                                O que há de mais tecnológico e inovador em tratamento dentário!
-
-                                                </div>
-                                                <a href='#SIMULAR' className="button">SIMULAR</a>
-                                            </div>
-                                            <img className='photo' src={Delfhi} alt='Logo'/>
-                                        </div> 
-                                        </Item>
-                                        <Item>
                                         <div className="card ac">
                                             <div className="info">
                                                 <div className="name">Humana</div>
@@ -431,7 +417,7 @@ class AboutOne extends React.Component {
                                     <div class="card">
                                         <div class="box">
                                             <div class="content">
-                                                <h2>DELFHI</h2>
+                                                <h2>WEBCK</h2>
                                                 <h3>PLANOS COMPLETOS A PARTIR DE</h3>
                                                 <p>
                                                     R$139,90

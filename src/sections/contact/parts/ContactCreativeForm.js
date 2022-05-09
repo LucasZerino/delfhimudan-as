@@ -188,14 +188,14 @@ class ContactThreeForm extends React.Component {
           e.preventDefault();
           
           emailjs.sendForm(
-            'service_zkaif7h',
-            'template_7b3k2jn',
-            e.target,
-            'uPupkUUqsmir4hGB0'
-            ).then(res=>{
-              console.log(res);
-            }).catch(err=> console.log(err));
-            e.target.reset()
+          'service_1x6yttm',
+          'template_mq1a81o',
+          e.target,
+          'gF3FhzRhhm0c4PqF2'
+          ).then(res=>{
+            console.log(res);
+          }).catch(err=> console.log(err));
+          e.target.reset()
           }
 
 

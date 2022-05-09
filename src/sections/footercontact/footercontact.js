@@ -76,15 +76,15 @@ class Footercontact extends React.Component{
            <div className='corretora'>
                <div className='left'>
 
-                    <h1 className='desc1'>Delfhi corretora de Seguros Adm e Rpres LTDA</h1>
-                    <h1 className='desc1'>Rua Princesa Isabel, 461, Cidade Alta, Natal/RN</h1>
-                    <h1 className='desc1'>atendimento@delfhicorretora.com.br</h1>
+                    <h1 className='desc1'>Corretora de Seguros Adm e Rpres LTDA</h1>
+                    <h1 className='desc1'>Rua Lorem Ysulun, 371 Natal/RN</h1>
+                    <h1 className='desc1'>atendimento@webck.com.br</h1>
                </div>
                <div className='right'>
       
-                    <h1 className='desc2'>CPNJ: 04.653.113/0001-47</h1>
-                    <h1 className='desc2'>CEP: 59025-400</h1>
-                    <h1 className='desc2'>Telefone: (84) 3211-1000 | Whatsapp: (84) 99643-5898</h1>
+                    <h1 className='desc2'>CPNJ: 004748474844548/8784</h1>
+                    <h1 className='desc2'>CEP: 59060-400</h1>
+                    <h1 className='desc2'>Telefone: (84) 3232-32323 | Whatsapp: (84) 99999-9999</h1>
                </div>
            </div>
           </FootercontactMain>
